@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@200;300;400;500;600&family=Tenor+Sans&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-tenor: "Tenor Sans", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom luxury gold/silver subtle accents */
+  --color-gold-light: #f3e9dc;
+  --color-gold-accent: #d4af37;
+  --color-luxury-charcoal: #111112;
+  --color-luxury-black: #070708;
+}
+
+/* Custom overlay or scrollbar aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070708;
+}
+::-webkit-scrollbar-thumb {
+  background: #232326;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a40;
+}
+
+body {
+  background-color: var(--color-luxury-black);
+  color: #e5e5e6;
+  font-family: var(--font-sans);
+}
+
+/* Smooth custom glow animation */
+@keyframes luxuryGlow {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+.glow-overlay {
+  animation: luxuryGlow 8s ease-in-out infinite;
+}
+

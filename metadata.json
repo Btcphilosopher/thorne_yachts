@@ -1,0 +1,6 @@
+{
+  "name": "Thorne Hyperobjects",
+  "description": "An ultra-luxury, high-end digital showroom and registry for bespoke yachts, custom automobiles, and on-chain certified assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
